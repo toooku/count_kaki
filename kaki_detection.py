@@ -57,11 +57,8 @@ estimated_count = total_area / common_area if common_area > 0 else 0
 
 print(f"最小二乗法による共通面積を使用した柿の推定個数: {int(estimated_count)}")
 
-# 輪郭を元の画像に描画（輪郭線の色を青（BGR: (255, 0, 0)）、線の太さを2に指定）
+# 輪郭を元の画像に描画
 cv2.drawContours(kaki_contoured, contours, -1, (255, 255, 255), 1)
-
-# 輪郭が描かれた画像をファイルに書き出す
-cv2.imwrite(OUTPUT_CONTOURED_IMAGE_PATH, kaki_contoured)
 
 # 輪郭が描かれた画像をファイルに書き出す
 cv2.imwrite(OUTPUT_CONTOURED_IMAGE_PATH, kaki_contoured)
