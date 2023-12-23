@@ -5,6 +5,7 @@ This script processes an image to detect and estimate the number of kakis (persi
 ## Overview
 
 The script performs the following steps:
+
 - Reads an image of kakis.
 - Converts the image to the HSV color space.
 - Applies a median blur to reduce noise.
@@ -18,18 +19,21 @@ The script performs the following steps:
 ## Requirements
 
 To run this script, you'll need Python installed on your system along with the following libraries:
+
 - numpy
 - opencv-python
 - scipy
 
 You can install these libraries using `pip` with the following command:
-```
+
+``` Shell
 pip install numpy opencv-python scipy
 ```
 
 ## Usage
 
 To use the script, follow these steps:
+
 1. Place your image of kakis in the `./img/` directory and name it `kaki.JPG`.
 2. Run the script with the command `python kaki_detection.py`.
 3. The script will output two images:
